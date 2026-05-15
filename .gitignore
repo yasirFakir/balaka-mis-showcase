@@ -47,3 +47,5 @@ backend.log
 test-results/
 frontend/test-results/
 frontend/tests/e2e/test-results/
+.vercel
+.env*.local
