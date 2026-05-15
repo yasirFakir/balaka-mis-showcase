@@ -1,6 +1,5 @@
 {
   "framework": "nextjs",
-  "rootDirectory": "frontend",
   "buildCommand": "npm run build:client",
-  "outputDirectory": "apps/balaka-client/.next"
+  "outputDirectory": "frontend/apps/balaka-client/.next"
 }
