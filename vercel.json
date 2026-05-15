@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "public": false,
+  "buildCommand": "npm run build:client",
+  "installCommand": "npm install",
+  "outputDirectory": "frontend/apps/balaka-client/.next",
+  "framework": "nextjs"
+}
