@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #FCFDFF;
+            margin: 0;
+            padding: 0;
+            color: #020617;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            border: 2px solid #065084;
+        }
+        .header {
+            background-color: #065084;
+            color: #ffffff;
+            padding: 40px 30px;
+            text-align: left;
+            border-bottom: 4px solid #78B9B5;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+        .tagline {
+            color: #78B9B5;
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 5px;
+            display: block;
+        }
+        .content {
+            padding: 40px 30px;
+            line-height: 1.6;
+        }
+        .content p {
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+        .receipt-box {
+            margin: 30px 0;
+            border: 1px solid #065084;
+            background-color: #FCFDFF;
+        }
+        .receipt-header {
+            background-color: #F2F4F7;
+            padding: 12px 20px;
+            border-bottom: 1px solid #065084;
+            font-size: 10px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #065084;
+        }
+        .receipt-body {
+            padding: 20px;
+        }
+        .row {
+            margin-bottom: 12px;
+            font-size: 14px;
+            overflow: hidden;
+        }
+        .label {
+            float: left;
+            font-weight: 900;
+            color: #64748b;
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+        .value {
+            float: right;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            color: #065084;
+        }
+        .total-row {
+            background-color: #065084;
+            color: #ffffff;
+            padding: 15px 20px;
+            margin-top: 10px;
+        }
+        .total-row .label {
+            color: #78B9B5;
+        }
+        .total-row .value {
+            color: #ffffff;
+            font-size: 20px;
+        }
+        .footer {
+            padding: 30px;
+            text-align: center;
+            font-size: 11px;
+            color: #64748b;
+            border-top: 1px solid #e2e8f0;
+            background-color: #F2F4F7;
+        }
+        .signature {
+            margin-top: 40px;
+            font-size: 14px;
+            border-top: 1px solid #f1f5f9;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Payment Confirmed</h1>
+            <span class="tagline">Official Registry // Air Balaka International Travel</span>
+        </div>
+        <div class="content">
+            <p><strong>Hi {{ name }},</strong></p>
+            <p>Your payment has been successfully processed and verified in our central ledger. Below are the details of this transaction.</p>
+            
+            <div class="receipt-box">
+                <div class="receipt-header">Transaction Metadata</div>
+                <div class="receipt-body">
+                    <div class="row">
+                        <span class="label">Reference ID:</span>
+                        <span class="value">{{ transaction_id }}</span>
+                    </div>
+                    <div class="row">
+                        <span class="label">Client Ref:</span>
+                        <span class="value">{{ ref_id }}</span>
+                    </div>
+                    <div class="row">
+                        <span class="label">Date Recorded:</span>
+                        <span class="value">{{ date }}</span>
+                    </div>
+                    <div class="row">
+                        <span class="label">Payment Method:</span>
+                        <span class="value">{{ method }}</span>
+                    </div>
+                </div>
+                <div class="total-row">
+                    <span class="label">Total Settled:</span>
+                    <span class="value">{{ amount }} {{ currency }}</span>
+                </div>
+            </div>
+
+            <p style="font-size: 13px; color: #64748b; font-style: italic;">
+                Note: This is a computer-generated confirmation. You can download the full PDF receipt from your dashboard at any time.
+            </p>
+            
+            <div class="signature">
+                Regards,<br>
+                <strong>The Financial Operations Team</strong><br>
+                Air Balaka International Travel
+            </div>
+        </div>
+        <div class="footer">
+            &copy; 2026 Air Balaka International Travel. All Rights Reserved.<br>
+            Technical Node: DHAKA-REG-01
+        </div>
+    </div>
+</body>
+</html>

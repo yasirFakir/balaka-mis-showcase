@@ -1,0 +1,18 @@
+{
+  "name": "balaka-core",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./api": "./api.ts",
+    "./types": "./types.ts",
+    "./hooks/use-document-actions": "./hooks/use-document-actions.ts",
+    "./hooks/use-service-workflow": "./hooks/use-service-workflow.ts",
+    "./hooks/use-gonia-directory": "./hooks/use-gonia-directory.ts",
+    "./hooks/use-request-financials": "./hooks/use-request-financials.ts",
+    "./hooks/use-currency-formatter": "./hooks/use-currency-formatter.ts",
+    "./currency-context": "./currency-context.tsx",
+    "./formatters": "./formatters.ts"
+  },
+  "dependencies": {
+  }
+}

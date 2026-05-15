@@ -1,0 +1,220 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* Core Theme Profiles */
+@import "./themes/classic.css";
+@import "./themes/profiles.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Geist Sans", "Inter", var(--font-bengali), ui-sans-serif, system-ui;
+  --font-mono: var(--font-geist-mono);
+  --font-bengali: var(--font-bengali);
+  
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+}
+
+:root {
+  --background: var(--gonia-canvas);
+  --foreground: var(--gonia-ink);
+  
+  --card: var(--gonia-surface);
+  --card-foreground: var(--gonia-ink);
+  
+  --popover: var(--gonia-surface);
+  --popover-foreground: var(--gonia-ink);
+  
+  --primary: var(--gonia-primary);
+  --primary-foreground: var(--gonia-surface);
+  
+  --secondary: var(--gonia-secondary);
+  --secondary-foreground: var(--gonia-surface);
+  
+  --muted: var(--gonia-surface);
+  --muted-foreground: var(--gonia-ink);
+  
+  --accent: var(--gonia-accent);
+  --accent-foreground: var(--gonia-ink);
+  
+  --destructive: var(--gonia-error);
+  --destructive-foreground: #FFFFFF;
+
+  --border: color-mix(in srgb, var(--gonia-primary) 30%, transparent);
+  --input: color-mix(in srgb, var(--gonia-primary) 15%, transparent);
+  --ring: var(--gonia-primary);
+  
+  --radius: 0rem;
+
+  --sidebar: var(--gonia-surface);
+  --sidebar-foreground: var(--gonia-ink);
+  --sidebar-primary: var(--gonia-primary);
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #F2F0E4;
+  --sidebar-accent-foreground: var(--gonia-primary);
+}
+
+.bg-saturated-custom {
+    background-image: var(--gonia-gradient);
+    background-size: cover;
+}
+
+.bg-saturated-custom:hover {
+    background-image: none !important;
+}
+
+@layer base {
+  input[type="checkbox"] {
+    @apply border-primary/20 text-primary focus:ring-primary focus:ring-offset-0;
+    accent-color: var(--gonia-primary);
+  }
+}
+
+.dark {
+  --gonia-primary: var(--gonia-accent);
+  --gonia-canvas: #0F172A;
+  --gonia-surface: #1E293B;
+  --gonia-ink: #F1F5F9;
+  
+  --background: var(--gonia-canvas);
+  --foreground: var(--gonia-ink);
+  --card: var(--gonia-surface);
+  --card-foreground: var(--gonia-ink);
+  --popover: var(--gonia-surface);
+  --popover-foreground: var(--gonia-ink);
+  
+  --primary: var(--gonia-primary);
+  --primary-foreground: #FFFFFF;
+  
+  --secondary: var(--gonia-secondary);
+  --secondary-foreground: #FFFFFF;
+  
+  --muted: var(--gonia-surface);
+  --muted-foreground: var(--gonia-ink);
+  
+  --accent: var(--gonia-accent);
+  --accent-foreground: var(--gonia-ink);
+  
+  --destructive: #BE123C;
+  --destructive-foreground: #FFFFFF;
+  
+  --border: var(--gonia-primary);
+  --input: var(--gonia-primary);
+  
+  --sidebar: var(--gonia-surface);
+  --sidebar-foreground: var(--gonia-ink);
+  --sidebar-primary: var(--gonia-primary);
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #334155;
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: var(--gonia-primary);
+  --sidebar-ring: var(--gonia-primary);
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hover-mechanical {
+    @apply transition-all duration-100 ease-out hover:border-l-[8px] hover:bg-muted/20 border-l-0 border-transparent hover:border-primary;
+  }
+  
+  .border-power-l {
+    @apply border-l-4 border-primary;
+  }
+
+  .animate-gonia-pulse {
+    animation: gonia-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}
+
+@keyframes gonia-pulse {
+  0%, 100% {
+    border-color: var(--gonia-primary);
+    box-shadow: 3px 3px 0 0 color-mix(in srgb, var(--gonia-primary) 40%, transparent);
+  }
+  50% {
+    border-color: var(--gonia-secondary);
+    box-shadow: 5px 5px 0 0 color-mix(in srgb, var(--gonia-secondary) 20%, transparent);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  .animate-spin {
+    @apply text-primary;
+  }
+}
+
+[data-sonner-toast] {
+  @apply !rounded-none !border !border-primary/20 !border-l-[6px] !border-l-primary !shadow-none !bg-[var(--gonia-canvas)] !text-primary font-bold normal-case tracking-tight text-[10px] !p-3 !min-w-[220px] relative;
+}
+
+[data-sonner-toast][data-type="success"] {
+  @apply !border-l-[var(--gonia-success)];
+}
+
+[data-sonner-toast][data-type="success"] [data-icon] {
+  @apply !text-[var(--gonia-success)];
+}
+
+[data-sonner-toast][data-type="error"] {
+  @apply !border-l-[var(--gonia-error)];
+}
+
+[data-sonner-toast][data-type="error"] [data-icon] {
+  @apply !text-[var(--gonia-error)];
+}
+
+[data-sonner-toast] [data-close-button] {
+  @apply !absolute !bg-transparent !text-primary/30 !rounded-none !border-none !h-3.5 !w-3.5 !opacity-100 flex items-center justify-center transition-colors hover:!text-destructive;
+  left: unset !important;
+  right: 6px !important;
+  top: 6px !important;
+  transform: none !important;
+}
+
+[data-sonner-toast] [data-description] {
+  @apply !text-primary/60 !font-medium !text-[9px] !leading-tight;
+}

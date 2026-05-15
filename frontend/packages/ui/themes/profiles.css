@@ -1,0 +1,130 @@
+/* PROFILE: Gonia Classic Green (Original Fallback) */
+.theme-classic-green {
+  --gonia-primary: #31694E;
+  --gonia-primary-deep: #1B4332;
+  --gonia-secondary: #658C58;
+  --gonia-secondary-pale: #A7C49D;
+  --gonia-accent: #BBC863;
+  --gonia-accent-saturated: #D4A373;
+  --gonia-warm-sand: #E9C46A;
+  --gonia-canvas: #FDFCF6;
+  --gonia-surface: #FFFFFF;
+  --gonia-limestone: #F2F0E4;
+  --gonia-ink: #1A2621;
+
+  /* Semantic Harmony */
+  --gonia-success: #059669;
+  --gonia-warning: #BBC863;
+  --gonia-error: #B24C4C;
+  --gonia-info: #658C58;
+
+  --gonia-gradient: linear-gradient(135deg, #1B4332 0%, #31694E 100%);
+}
+
+/* PROFILE: Gonia Monolith (Premium Official - Zinc) */
+.theme-monolith {
+  --gonia-primary: #18181B; 
+  --gonia-primary-deep: #09090B; 
+  --gonia-secondary: #52525B; 
+  --gonia-secondary-pale: #F4F4F5; 
+  --gonia-accent: #27272A; 
+  --gonia-accent-saturated: #000000;
+  --gonia-warm-sand: #71717A; 
+  --gonia-canvas: #FFFFFF;
+  --gonia-surface: #FFFFFF;
+  --gonia-limestone: #FAFAFA;
+  --gonia-ink: #09090B;
+
+  /* Semantic Harmony */
+  --gonia-success: #18181B;
+  --gonia-warning: #71717A;
+  --gonia-error: #E11D48; 
+  --gonia-info: #3F3F46;
+
+  --border: rgba(24, 24, 27, 0.1);
+  --input: rgba(24, 24, 27, 0.05);
+  --muted-foreground: #71717A;
+
+  --gonia-gradient: linear-gradient(135deg, #09090B 0%, #18181B 100%);
+}
+
+/* PROFILE: Gonia Prussian (Historical & Grave Blue) */
+.theme-prussian {
+  --gonia-primary: #00132D; 
+  --gonia-primary-deep: #000A1A; 
+  --gonia-secondary: #002657; 
+  --gonia-secondary-pale: #F0F4F8; 
+  --gonia-accent: #00377E; 
+  --gonia-accent-saturated: #002D67;
+  --gonia-warm-sand: #001E45;
+  --gonia-canvas: #FCFDFE; 
+  --gonia-surface: #FFFFFF;
+  --gonia-limestone: #F1F5F9;
+  --gonia-ink: #00132D;
+
+  /* Semantic Harmony */
+  --gonia-success: #00132D;
+  --gonia-warning: #002D67;
+  --gonia-error: #BE123C;
+  --gonia-info: #00377E;
+
+  --border: rgba(0, 19, 45, 0.15);
+  --input: rgba(0, 19, 45, 0.05);
+  --muted-foreground: #002657;
+
+  --gonia-gradient: linear-gradient(135deg, #000A1A 0%, #00132D 100%);
+}
+
+/* PROFILE: Gonia Glacier (Frosted & Gradient) */
+.theme-glacier {
+  --gonia-primary: #1C4D8D; 
+  --gonia-primary-deep: #0F2854; 
+  --gonia-secondary: #4988C4; 
+  --gonia-secondary-pale: #BDE8F5; 
+  --gonia-accent: #0EA5E9; 
+  --gonia-accent-saturated: #0284C7;
+  --gonia-warm-sand: #E0F2FE;
+  --gonia-canvas: #F8FAFF; 
+  --gonia-surface: #FFFFFF;
+  --gonia-limestone: #F1F5F9;
+  --gonia-ink: #0F172A;
+
+  /* Semantic Harmony */
+  --gonia-success: #1C4D8D;
+  --gonia-warning: #4988C4;
+  --gonia-error: #BE123C;
+  --gonia-info: #0EA5E9;
+
+  --border: rgba(28, 77, 141, 0.12);
+  --input: rgba(28, 77, 141, 0.04);
+  --muted-foreground: #475569;
+  
+  --gonia-gradient: linear-gradient(135deg, #0F2854 0%, #1C4D8D 100%);
+}
+
+/* PROFILE: Gonia Twilight (Deep Space & Purple) */
+.theme-twilight {
+  --gonia-primary: #1B1A55; 
+  --gonia-primary-deep: #070F2B; 
+  --gonia-secondary: #535C91; 
+  --gonia-secondary-pale: #E0E2FF; 
+  --gonia-accent: #9290C3; 
+  --gonia-accent-saturated: #535C91;
+  --gonia-warm-sand: #9290C3;
+  --gonia-canvas: #F8F9FF; 
+  --gonia-surface: #FFFFFF;
+  --gonia-limestone: #F1F3FF;
+  --gonia-ink: #070F2B;
+
+  /* Semantic Harmony */
+  --gonia-success: #1B1A55;
+  --gonia-warning: #535C91;
+  --gonia-error: #BE123C;
+  --gonia-info: #9290C3;
+
+  --border: rgba(27, 26, 85, 0.15);
+  --input: rgba(27, 26, 85, 0.05);
+  --muted-foreground: #535C91;
+
+  --gonia-gradient: linear-gradient(135deg, #070F2B 0%, #1B1A55 100%);
+}

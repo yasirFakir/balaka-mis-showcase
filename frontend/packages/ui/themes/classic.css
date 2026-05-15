@@ -1,0 +1,22 @@
+:root {
+  /* Theme: Gonia Deep Horizon (Tuned Default) */
+  --gonia-primary: #065084; 
+  --gonia-primary-deep: #1E0741; /* Darker, less "link-like" purple */
+  --gonia-secondary: #0F828C; 
+  --gonia-secondary-pale: #E0F4F4; 
+  --gonia-accent: #78B9B5; 
+  --gonia-accent-saturated: #0F828C;
+  --gonia-warm-sand: #78B9B5;
+  --gonia-canvas: #FCFDFF; 
+  --gonia-surface: #FFFFFF;
+  --gonia-limestone: #F1F8F8;
+  --gonia-ink: #020617; /* Deep Navy Black for readability */
+
+  /* Semantic Harmony */
+  --gonia-success: #0F828C;
+  --gonia-warning: #78B9B5;
+  --gonia-error: #BE123C;
+  --gonia-info: #065084;
+
+  --gonia-gradient: linear-gradient(135deg, #1E0741 0%, #065084 100%);
+}

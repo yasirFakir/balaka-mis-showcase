@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "moduleResolution": "bundler",
+    "baseUrl": ".",
+    "plugins": [{ "name": "next" }],
+    "paths": {
+      "@/components/*": ["./components/*"],
+      "@/lib/*": ["./lib/*", "../../packages/ui/lib/*"],
+      "@/i18n/*": ["./i18n/*"],
+      "@/ui": ["../../packages/ui/index.ts"],
+      "@/ui/*": ["../../packages/ui/*"],
+      "@/core/*": ["../../packages/core/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "../../packages/ui/**/*"],
+  "exclude": ["node_modules"]
+}
