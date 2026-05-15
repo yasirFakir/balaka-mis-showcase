@@ -2,7 +2,6 @@ name: Deploy Documentation
 on:
   push:
     branches: [main]
-    paths: ['documentation/**']
 permissions:
   contents: read
   pages: write
