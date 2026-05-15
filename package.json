@@ -1,0 +1,10 @@
+{
+  "name": "balaka-mis-showcase",
+  "private": true,
+  "dependencies": {
+    "next": "16.1.1"
+  },
+  "scripts": {
+    "build:client": "npm run build --workspace=balaka-client"
+  }
+}
